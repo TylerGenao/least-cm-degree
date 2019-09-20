@@ -28,13 +28,13 @@ See **Required Lists** descriptions for dependencies.
 
 - `dcm_list_X1_1mil.m`: List of least CM degree values for X_1(N) for N up to 1,000,000, each including a minimizing order. 
 
-- `dcm_list_all_min_orders_X1_10k.m`: List of least CM degree values for X_1(N) for N up to 10,000, with a list of all the minimizing orders of class number up to 100. 
+- `dcm_list_all_min_orders_X1_10k.m`: List of least CM degree values for X_1(N) for N up to 10,000, with a list of all their minimizing orders.
 
 ### X0 
 
-- `least_degreesX0.m`: The aim of this code is to compute, for an integer N >= 2, the least degree over Q of a CM point on the modular curve X_0(N). We directly use computations from `least_degreesX1.m` to do this. These computations are then used to try to guarantee the existence of a sporadic CM point on X_0(N) via Frey-Faltings and lower bounds on the gonality of X_0(N). We also prove there can be no sporadic CM point on X_0(N) for some N using the least degree computation combined with both upper bounds on the gonality of X_0(N) as well as knowledge of all N with delta(X_0(N)) <=2. 
+- `least_degreesX0.m`: The aim of this code is to compute, for an integer N >= 2, the least degree over Q of a CM point on the modular curve X_0(N). We directly use computations from `least_degreesX1.m` to do this. These computations are then used to try to guarantee the existence of a sporadic CM point on X_0(N) via Frey-Faltings and lower bounds on the gonality of X_0(N). We also prove there can be no sporadic CM point on X_0(N) for some N using the least degree computation combined with both upper bounds on the gonality of X_0(N) as well as knowledge of all N with delta(X_0(N)) <= 2. 
 
-- `hyper_bads_X0.m`: Sequence of 359 naturals N in `further_bads_X0_X1.m` such that X_0(N) is guarunteed a sporadic CM point via methods in `least_degreesX0.m`. This corresponds to the set F_0 in our paper.
+- `hyper_bads_X0.m`: Sequence of 359 naturals N in `further_bads_X0_X1.m` such that X_0(N) is guaranteed a sporadic CM point via methods in `least_degreesX0.m`. This corresponds to the set F_0 in our paper.
 
 - `no_sporadic_CM_X0.m`: Sequence of the 50 values of N for which we prove X_0(N) has no sporadic CM point. 
 
