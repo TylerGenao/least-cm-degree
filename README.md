@@ -20,7 +20,7 @@ See **Required Lists** descriptions for dependencies.
 
 - `least_degreesX1.m`: The aim of this code is to compute, for an integer N >= 2, the least degree over Q of a CM point on the modular curve X_1(N) (via methods of Bourdon-Clark '19). These computations are then used to try to guarantee the existence of a sporadic CM point on X_1(N) via Frey-Faltings and lower bounds on the gonality of X_1(N). We also prove there can be no sporadic CM point on X_1(N) for some N using the least degree computation combined with upper bounds on the gonality of X_1(N) from Derickx-van Hoeij '13. 
 
-- `hyper_bads_X1.m`: Sequence of 297 naturals N in `further_bads_X0_X1.m` such that X_1(N) is guarunteed a sporadic CM point via methods in `least_degreesX1.m`. This corresponds to the set F_1 in our paper. 
+- `hyper_bads_X1.m`: Sequence of 297 naturals N in `further_bads_X0_X1.m` such that X_1(N) is guaranteed a sporadic CM point via methods in `least_degreesX1.m`. This corresponds to the set F_1 in our paper. 
 
 - `no_sporadic_CM_X1.m`: Sequence of the 67 values of N for which we prove X_1(N) has no sporadic CM point. 
 
