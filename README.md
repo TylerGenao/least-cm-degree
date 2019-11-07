@@ -46,7 +46,7 @@ See **Required Lists** descriptions for dependencies.
 
 - `least_degreesXMN.m`: The aim of this code is to compute, for integers M,N with M|N and N >= 2, the least degree over Q(\zeta_M) of a CM point on the modular curve X(M,N) (via methods of Bourdon-Clark '19). These computations are then used to try to guarantee the existence of a sporadic CM point on X(M,N) via Frey-Faltings and lower bounds on the gonality of X(M,N). We also prove there can be no sporadic CM point on X(M,N) for some M,N using the least degree computation combined with upper bounds on the gonality of X(M,N) derived from on those of X_1(N) Derickx-van Hoeij '13. 
 
-- `hyper_bads_XMN.m`: Sequence of 480 pairs (M,N) in `further_bads_XMN.m` such that X(M,N) is guarunteed a sporadic CM point via methods in `least_degreesXMN.m`.
+- `hyper_bads_XMN.m`: Sequence of 480 pairs (M,N) in `further_bads_XMN.m` such that X(M,N) is guaranteed a sporadic CM point via methods in `least_degreesXMN.m`.
 
 - `no_sporadic_CM_XMN.m`: Sequence of the 89 pairs (M,N) for which we prove X(M,N) has no sporadic CM point. 
 
