@@ -63,7 +63,7 @@ See **Required Lists** descriptions for dependencies.
   - `least_degreesXMN.m`  
   
 - `classnum_disc_list.m`: Sequence of absolute values of discriminants of imaginary quadratic fields of class number up to 100. Modified from list of M. Watkins. Required for  
-  - `least_degreesX1.m` *Only* if using the dcm_over_orders function (currently commented out, superseded by dcm_over_nonmax_orders)
+  - `least_degreesX1.m` *only* if using the dcm_over_orders function (currently commented out, superseded by dcm_over_nonmax_orders)
 
   
 - `cond_disc_list_all_O.m`: List of all (not just maximal) imaginary quadratic orders of class number up to 100. Generated using list of maximal orders by M. Watkins. Required for  
