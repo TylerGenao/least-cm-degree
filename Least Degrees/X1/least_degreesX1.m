@@ -84,17 +84,25 @@ T := function(f,d_K,M,N) //ONLY use N>1
     d := f^2*d_K;
 
     if (N eq 2) and (M eq 1) then
-        return 1;
+        if (d ne -3) and KroneckerSymbol(2,d) eq -1 then
+            return 3;
+        else
+            return 1;
+        end if;
+
     elif (N eq 2) and (M eq 2) then
     	return ( 2*(2-KroneckerSymbol(d,2)) ) / w;
+
     elif (N eq 3) and (M eq 1) then
         if KroneckerSymbol(d,3) eq -1 then
             return 8/w;
         else
             return 1;
         end if;
+
     elif (N eq 3) and (M eq 3) then
     	return ( 2*(3-KroneckerSymbol(d,3)) )/w;
+
     elif (N ge 4) then
     	//FM := Factorization(M);
         FN := Factorization(N);
@@ -103,6 +111,7 @@ T := function(f,d_K,M,N) //ONLY use N>1
             P := P*T_Tilde_PrimePower(f,d_K,pair[1],Valuation(M, pair[1]), pair[2]);
         end for;
         return P/w; 
+
     end if;
 end function;
 
@@ -411,7 +420,7 @@ end function;
 // d_{CM}(X_1(N)) = phi(N)/2, with a minimizing order O_K where K = Q(i), as long as N is not Type 1. 
 
 is_of_Type2 := function(N)
-    if N lt 7 then
+    if N lt 5 then
         return false;
     elif N mod 4 eq 0 then
         return false;
@@ -617,7 +626,7 @@ end function;
 // an imaginary quadratic field K such that 
 // f^2*d_K < -4 and (T^o(O,N) * 2 / phi(N))*h(O) <= 100. 
 
-// NOTE: Using this function, we find that the first N for which we are not guarunteed 
+// NOTE: Using this function, we find that the first N for which we are not guaranteed 
 // to be computing d_{CM}(X_1(N)) exactly is 50450400
 
 dcm_exact_checker := function(N)
